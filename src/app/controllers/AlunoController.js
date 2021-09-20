@@ -27,7 +27,7 @@ class AlunoController {
         });
 
         if(existe){
-            return res.sstatus(400).send({msg: 'Aluno já existe'});
+            return res.status(400).send({msg: 'Aluno já existe'});
         }
 
         const aluno = await Aluno.create({
