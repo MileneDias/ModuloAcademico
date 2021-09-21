@@ -1,6 +1,6 @@
 module.exports = {
     info: {
-        version: '1.0.0',
+        version: '0.1.0',
         title: 'Students API',
         descriptions: 'API list of students',
     },
@@ -8,10 +8,7 @@ module.exports = {
     schemas: ['http'],
     consumes:['application/json'],
     produces: ['application/json'],
-    securityOptions: {
-
-    },
     definitions:{
         
-    }
+    },
 }

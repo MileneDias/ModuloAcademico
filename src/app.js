@@ -9,7 +9,6 @@ class App {
     constructor() {
         this.server = express();
         this.config();
-        this.middlewares();
         this.routers();
     }
 
@@ -21,9 +20,6 @@ class App {
             path: process.env.NODE_ENV === 'test'
                 ? '.env.test' : '.env',
         });
-    }
-
-    middlewares() {        
     }
 
     routers() {
